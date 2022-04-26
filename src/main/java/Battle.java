@@ -1,4 +1,5 @@
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Battle {
     enum Weapon {
@@ -6,9 +7,14 @@ public class Battle {
     }
     public static int result = 0;
     public static String weapon;
+    public static String br;
+    public static void getWeapon(String weapon){
+    }
 
     public static void main(String[] args) {
         while (!(result == 5)) {
+            Scanner in = new Scanner(System.in);
+            getWeapon(in.nextLine());
             try {
                 switch (Weapon.valueOf(weapon)) {
                     case ROCK:
